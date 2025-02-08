@@ -1,11 +1,10 @@
-# How the project is structured 
-The methods are stored in the helper folder (For now only the adaptive_gauss_kronrod.c is usefull)
+# Project Structure  
+- The `helper/` folder contains supporting methods. Currently, only `adaptive_gauss_kronrod.c` is relevant.  
+- The base directory contains test files for evaluating methods. You can add or remove functions in the test file as needed.  
+- For now, only `adaptive_gauss_test.c` and `adaptive_gauss_kronrod.c` are important.  
 
-In the base directory there are tests which can be run to test the method on functions more functions can be added or removed in the test file.
-For now only the adaptive_gauss_test.c file and adaptive_gauss_kronrod.c is important
-
-
-### How to run
-#### On mac and linux.
-
-```gcc adaptive_gauss_test.c  -o prog.out && ./prog.out```
+## Running the Project  
+### On macOS and Linux  
+Compile and run the test program with:  
+```sh
+gcc adaptive_gauss_test.c -o prog.out && ./prog.out
