@@ -8,6 +8,8 @@ long double f(long double x) { return 2 * x; }
 // long double f(long double x) { return (pow(x, 24) * exp(-x) * cos(x)); }
 // long double f(long double x) { return (exp(-x) * cos(x)); }
 
+// Weights taken from:
+// https://www.advanpix.com/2011/11/07/gauss-kronrod-quadrature-nodes-weights/
 // Gauss weights
 long double G10W[] = {2.955242247147528701738929946513383e-01L,
                       2.692667193099963550912269215694694e-01L,
